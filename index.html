@@ -6,13 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />  
   <link rel="stylesheet" href="style.css" />
   <title>Сдутія</title>
 </head>
 
 <body>
-  <div class="border">
-    <header class="container header-flex">
+
+    <header class="border">
+      <div class="container header-flex">
       <a class="header-logo list" href="https://olekkkor.github.io/goit-markup-hw-03/"><span
           class="logo-span">Web</span>Studio</a>
       <nav class="nav">
@@ -26,8 +28,9 @@
         <li><a href="mailto:info@devstudio.com" class="email list">info@devstudio.com</a></li>
         <li><a href="tel:+380961111111" class="phone list">+38 096 111 11 11</a></li>
       </ul>
+    </div>
     </header>
-  </div>
+  
   <main>
     <section id="studio" class="black-background hero">
       <div class="container">
@@ -39,97 +42,101 @@
       </div>
     </section>
 
-    <section class="section container feature">
+    <section class="feature">
+      <div class = "container">
       <h2 class="section-title visually-hidden">Переваги нашої студії</h2>
       <!-- Заголовок невидимий -->
 
-      <ul class="feature-list list">
-        <li class="feature-item">
-          <h3 class="title zero-padding-margin">УВАГА ДО ДЕТАЛЕЙ</h3>
+      <ul class="feature-list">
+        <li class="feature-item list">
+          <h3 class="title list">УВАГА ДО ДЕТАЛЕЙ</h3>
           <p class="text">
             Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
           </p>
         </li>
-        <li class="feature-item">
-          <h3 class="title zero-padding-margin">ПУНКТУАЛЬНІСТЬ</h3>
+        <li class="feature-item list">
+          <h3 class="title list">ПУНКТУАЛЬНІСТЬ</h3>
           <p class="text">
             Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
           </p>
         </li>
-        <li class="feature-item">
-          <h3 class="title zero-padding-margin">ПЛАНУВАННЯ</h3>
+        <li class="feature-item list">
+          <h3 class="title list">ПЛАНУВАННЯ</h3>
           <p class="text">Так само консультація з широким активом значною мірою зумовлює.</p>
         </li>
-        <li class="feature-item">
-          <h3 class="title zero-padding-margin">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+        <li class="feature-item list">
+          <h3 class="title list">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
           <p class="text">
             Значимість цих проблем настільки очевидна, що реалізація планових завдань.
           </p>
         </li>
       </ul>
+      </div>
     </section>
 
-    <section class="section container">
-      <div class="work-section">
-        <h2 class="zero-padding-margin section-title">Чим ми займаємося</h2>
-        <ul class="list zero-padding-margin">
+    <section class="work-section">
+      <div class= "container">
+        <h2 class="list section-title">Чим ми займаємося</h2>
+        <ul class="list zero-font-size">
           <li class="work-item">
-            <img class="img" src="./image/box1.jpg" alt="планшет" width="370" />
+            <img src="./image/box1.jpg" alt="планшет" width="370" />
           </li>
           <li class="work-item">
-            <img class="img" src="./image/box2.jpg" alt="ноутбук" width="370" />
+            <img src="./image/box2.jpg" alt="ноутбук" width="370" />
           </li>
           <li class="work-item">
-            <img class="img" src="./image/box3.jpg" alt="планшет" width="370" />
+            <img src="./image/box3.jpg" alt="планшет" width="370" />
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="section container team">
+    <section class="team">
+      <div class="container">
       <h2 class="section-title">Наша команда</h2>
       <ul class="team-list list">
         <li class="team-item">
-          <img class="img" src="./image/specialist1.jpg" alt="Ігор Дем'яненко" width="270" />
+          <img src="./image/specialist1.jpg" alt="Ігор Дем'яненко" width="270" />
           <div class="team-description">
             <h3 class="title">Ігор Дем'яненко</h3>
             <p class="text">Product Designer</p>
           </div>
         </li>
         <li class="team-item">
-          <img class="img" src="./image/specialist2.jpg" alt="Ольга Рєпіна" width="270" />
+          <img src="./image/specialist2.jpg" alt="Ольга Рєпіна" width="270" />
           <div class="team-description">
             <h3 class="title">Ольга Рєпіна</h3>
             <p class="text">Frontend Developer</p>
           </div>
         </li>
         <li class="team-item">
-          <img class="img" src="./image/specialist3.jpg" alt="Микола Тарасов" width="270" />
+          <img src="./image/specialist3.jpg" alt="Микола Тарасов" width="270" />
           <div class="team-description">
             <h3 class="title">Микола Тарасов</h3>
             <p class="text">Marketing</p>
           </div>
         </li>
         <li class="team-item">
-          <img class="img" src="./image/specialist4.jpg" alt="Михайло Єрмаков" width="270" />
+          <img src="./image/specialist4.jpg" alt="Михайло Єрмаков" width="270" />
           <div class="team-description">
             <h3 class="title">Михайло Єрмаков</h3>
             <p class="text">UI Designer</p>
           </div>
         </li>
       </ul>
+      </div>
     </section>
   </main>
 
   <footer id="footer" class="black-background footer">
     <div class="container">
-      <a class="footer-logo list" href="https://olekkkor.github.io/goit-markup-hw-03/"><span
+      <a class="footer-logo" href="https://olekkkor.github.io/goit-markup-hw-03/"><span
           class="logo-span">Web</span>Studio</a>
       <address class="footer-info">
         <p class="footer-adress">м. Київ, пр-т Лесі Українки, 26</p>
-        <ul class="list zero-padding-margin">
-          <li>
-            <a href="mailto:info@devstudio.com" class="footer-contacts list">info@devstudio.com</a>
+        <ul class="list">
+          <li class="footer-contacts">
+            <a href="mailto:info@devstudio.com" class="footer-contacts">info@devstudio.com</a>
           </li>
           <li>
             <a href="tel:+380961111111" class="footer-contacts list">+380 96 111 11 11</a>

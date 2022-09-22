@@ -18,21 +18,21 @@ body {
   margin: 0px;
 }
 
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0px;
+}
+
+
+
 .container {
-  box-sizing: border-box;
   width: 1200px;
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.footer-logo {
-  color: var(--white-color);
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-}
+
+
 
 /* header */
 .header-flex {
@@ -72,8 +72,8 @@ body {
 
 .item-nav .link {
   color: var(--primary-text-color);
-  padding-top: 100%;
-  padding-bottom: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   font-weight: 500;
   line-height: 1.14;
@@ -95,10 +95,11 @@ body {
   color: var(--blue-color);
 }
 
-.site-contacts {
+.site-contacts.list {
   display: flex;
   margin-left: auto;
-  padding-left: 0px;
+
+
 }
 
 .site-contacts .email {
@@ -134,14 +135,16 @@ body {
 .list {
   list-style: none;
   text-decoration: none;
-}
-
-.zero-padding-margin {
   padding: 0px;
   margin: 0px;
+}
+
+
+.zero-font-size{
   line-height: 0;
   font-size: 0px;
 }
+
 
 .visually-hidden {
   position: absolute;
@@ -159,8 +162,6 @@ body {
 /* Hero */
 
 .hero {
-  box-sizing: border-box;
-  height: 600px;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -189,7 +190,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.06em;
 }
 
 .button.primary {
@@ -240,6 +241,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
+  margin-bottom: 10px;
 }
 
 .feature-list .text {
@@ -252,7 +254,7 @@ body {
 /* Work */
 
 .work-section {
-  height: 386px;
+  padding-top: 0px;
   padding-bottom: 94px;
 }
 
@@ -267,7 +269,7 @@ body {
   margin-right: 29px;
 }
 
-.img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -276,9 +278,9 @@ body {
 /* Team */
 
 .team {
-  height: 648px;
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--gray-background);
 }
 
 .team-list {
@@ -289,7 +291,6 @@ body {
 }
 
 .team-item {
-  height: 368px;
   width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -300,12 +301,10 @@ body {
   margin-right: 30px;
 }
 
-.team-item img {
-  margin-bottom: 20px;
-}
 
 .team-description {
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-list .title {
@@ -314,15 +313,15 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .team-list .text {
-  margin-top: 10px;
-
   color: var(--second-text-color);
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 0px;
 }
 
 /* Footer */
@@ -334,22 +333,45 @@ body {
   padding-bottom: 60px;
 }
 
+.footer-logo {
+  display: block;
+  color: var(--white-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+
+
+  list-style: none;
+  text-decoration: none;
+}
+
+
 .footer-info {
   width: 231px;
   height: 81px;
 }
 
 .footer-adress {
+  margin-bottom: 9px;
+  
   color: var(--white-color);
   font-style: normal;
   line-height: 1.7;
 }
 
 .footer-contacts {
+  margin-bottom: 9px;
+  
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
+  
+  list-style: none;
+  text-decoration: none;
+
 }
 
 .footer-contacts:hover,
@@ -366,11 +388,9 @@ body {
 
 .portfolio-button {
   display: flex;
-  width: 48.9%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0px;
   margin-bottom: 50px;
+
+  justify-content: center;
 }
 
 .portfolio-button .button {
@@ -388,11 +408,8 @@ body {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 0px;
-  padding-right: 0px;
   flex-basis: calc((100% - 60px) / 3);
-  gap: 27px;
-  margin: 0px;
+  gap: 30px;
 }
 
 .portfolio-list-img {
@@ -408,9 +425,6 @@ body {
   padding-left: 24px;
   border: 1px solid #eeeeee;
   border-top: none;
-
-  line-height: 0;
-  font-size: 0px;
 }
 
 .portfolio-description .card-title {
@@ -418,6 +432,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .portfolio-description .card-text {
